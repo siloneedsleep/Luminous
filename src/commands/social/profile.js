@@ -49,7 +49,7 @@ module.exports = {
 
         // Icon đặc biệt cho đại gia hoặc Owner
         if (target.id === '914831312295165982') {
-            embed.setAuthor({ name: '👑 Vua Vibe Coding (Silo)', iconURL: target.displayAvatarURL() });
+            embed.setAuthor({ name: '👑 Silo', iconURL: target.displayAvatarURL() });
         } else if (await db.get(`premium_${target.id}`)) {
             embed.setAuthor({ name: '💎 Hội Viên Premium', iconURL: target.displayAvatarURL() });
         }
