@@ -8,7 +8,9 @@ module.exports = {
         if (message.author.bot) return;
 
         const prefix = client.prefix;
-
+        
+		if (commandName === 'ld') commandName = 'lockdown';
+        
         if (!message.content.startsWith(prefix)) return;
 
         const args = message.content.slice(prefix.length).trim().split(/ +/);
