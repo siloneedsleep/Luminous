@@ -34,7 +34,7 @@ module.exports = {
         await db.set(cooldownKey, now);
 
         const embed = LuminousEmbed.success(
-            `Bạn đã nhận được **${reward}** coin phần thưởng điểm danh hàng ngày!\nSố dư hiện tại: **${currentBalance + reward}** coin.`
+            `Bạn đã nhận được **${reward}** Star phần thưởng điểm danh hàng ngày!\nSố dư hiện tại: **${currentBalance + reward}** Star.`
         );
 
         await ctx.reply({ embeds: [embed] });
