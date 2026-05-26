@@ -27,7 +27,7 @@ module.exports = {
 
         const embed = LuminousEmbed.info(
             '💰 Số dư tài khoản',
-            `Người dùng **${targetUser.username}** hiện đang có **${balance}** coin trong ví.`
+            `Người dùng **${targetUser.username}** hiện đang có **${balance}** Star trong ví.`
         );
 
         await ctx.reply({ embeds: [embed] });
